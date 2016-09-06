@@ -33,13 +33,19 @@
 
     <article class="main-nav-content">
       <ul class="list">
-        <li><a href="articla-li1">文章1</a></li>
-        <li><a href="articla-li1">文章2</a></li>
-        <li><a href="articla-li1">文章3</a></li>
+        <li><a link="artical/articla-1.html">如果你做的事情毫不费力，就是在浪费时间--Heidi Roizen</a></li>
+        <li><a link="artical/articla-2.html">由一个按钮引发的思想爆炸</a></li>
+        <li><a link="artical/articla-3.html">如何去衡量和看待设计师的工作能力？</a></li>
+        <li><a link="artical/articla-4.html">胜兵先胜而后求战，败兵往往是先战而后求胜</a></li>
+        <li><a link="artical/articla-5.html">Some Goods recript in the road</a></li>
       </ul>
     </article>
   </section>
+  <div class="artical-layer-box">
+    <iframe src="artical/articla-1.html" scrolling="no" id="articalIframe" style="display: none;">
 
+    </iframe>
+  </div>
 <footer class="site-footer">
   <p><b>邮箱：</b><a href="mailto:382510118@qq.com">382510118@qq.com</a><strong>or</strong><a href="mailto:382510118@qq.com">lian382510118@gmail.com</a></p>
   <p><b>QQ：</b>382510118</p>
@@ -50,6 +56,16 @@
     $('.main-nav>div').removeClass('active');
     $(this).addClass('active');
   });
+  $('.artical-layer-box').on('click','.artical-layer-mark',function(){
+    $('.artical-layer-main').removeClass('in').removeClass('out').addClass('out');
+    $('.artical-layer-mark').removeClass('in').removeClass('out').addClass('out');
+    setTimeout(function(){$('.artical-layer-wrap').remove();$('.artical-layer-box').hide();},700)
+  })
+  $('.list>li>a').click(function(){
+    var link = $(this).attr('link');
+    $('.artical-layer-box').show();
+    $('.artical-layer-box').load(link);
+  })
 </script>
 </body>
 </html>

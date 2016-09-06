@@ -1,14 +1,17 @@
 * {
   box-sizing: border-box; }
-
+html{
+}
 body {
+  overflow: hidden;
+  overflow-y: auto;
   padding: 0;
   margin: 0;
   font-family: "微软雅黑 Light","Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71; }
-
+  color: #606c71;
+}
 a {
   color: #1e6bb8;
   text-decoration: none; }
@@ -214,8 +217,8 @@ ul{
 
 @media screen and (min-width: 64em) {
   .main-content {
-    max-width: 64rem;
-    padding: 2rem 6rem;
+    max-width: 72rem;
+    padding: 2rem 3rem;
     margin: 0 auto;
     font-size: 1.1rem; } }
 
@@ -253,6 +256,26 @@ ul{
   .site-footer {
     font-size: 0.9rem; } }
 /*by yue_shuangying*/
+  /*滚动条loading end*/
+::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece {
+  width: 8px;
+  border-radius: 0px;
+  background:rgba(100,100,100,0.0);
+}
+::-webkit-scrollbar:hover{
+   width: 8px;
+   border-radius: 0px;
+   background:rgba(100,100,100,0.1);
+   cursor: all-scroll;
+ }
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  border-radius: 6px;
+  background: rgba(180,180,180,0.3);
+}
+::-webkit-scrollbar-thumb:hover{
+  background: rgba(180,180,180,0.7);
+}
 .nav-box{
   padding:20px 0;
 }
@@ -373,4 +396,188 @@ ul{
   box-shadow: 0 0 4px 1px rgba(18, 186, 120,.6);
   border-radius: 4px;
   background-color: rgba(18, 186, 120,.02);
+}
+
+/*artical-layer*/
+#articalIframe{
+  width: 100%;
+  height: 100%;
+  border:none;
+}
+.artical-layer-box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.artical-layer-wrap{
+  height:100%;
+  width: 100%;
+  position: relative;
+}
+.artical-layer-mark{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height:100%;
+  background-color: rgba(40,40,40,.5);
+}
+.artical-layer-main{
+  position: absolute;
+  width: 800px;
+  left: 50%;
+  top:50px;
+  margin-left: -400px;
+  height: 35em;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,.36);
+  background-color: #fff;
+  overflow-y: auto;
+  padding: 1.3rem 2.4rem;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.artical-layer-main.in{
+  -webkit-animation:artical-in .6s ease-in-out;
+  -o-animation:artical-in .6s ease-in-out;
+  animation:artical-in .6s ease-in-out;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;;
+}
+.artical-layer-main.out{
+  -webkit-animation:artical-out .6s ease-in-out;
+  -o-animation:artical-out .6s ease-in-out;
+  animation:artical-out .6s ease-in-out;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;;
+}
+.artical-layer-mark.in{
+  -webkit-animation:mark-in .2s ease-in-out;
+  -o-animation:mark-in .2s ease-in-out;
+  animation:mark-in .2s ease-in-out;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;;
+}
+.artical-layer-mark.out{
+  -webkit-animation:mark-out .6s ease-in-out;
+  -o-animation:mark-out .6s ease-in-out;
+  animation:mark-out .6s ease-in-out;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;;
+}
+.artical-layer-main article{
+  color:#333;
+  text-indent: 2em;
+  font-size: .9rem;
+}
+.artical-layer-main article p{
+  margin:.5em 0;
+}
+.artical-title{
+  text-align: center;
+}
+.artical-tips{
+  font-size: 0.8rem;
+  color: #999;
+}
+@keyframes artical-in {
+  0%{
+    top: 0;
+    opacity: 0;
+  }
+  30%{
+    top: 20px;
+    opacity: 0.6;
+  }
+  100%{
+    top: 50px;
+    opacity: 1;
+  }
+}
+@keyframes artical-out {
+  0%{
+    top: 50px;
+    opacity: 1;
+  }
+  30%{
+    top: 20%;
+    opacity: 0.6;
+  }
+  90%{
+    top: 70%;
+    opacity: 0;
+  }
+  100%{
+    top: 100%;
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes mark-in {
+  0%{
+    opacity: 0;
+  }
+  30%{
+    opacity: 0.6;
+  }
+  100%{
+    opacity: 1;
+  }
+}@keyframes mark-out {
+   0%{
+     opacity: 1;
+     left:0;
+   }
+   30%{
+     opacity: 0.6;
+     left:30%;
+   }
+   99%{
+     left:100%;
+     opacity: 0;
+   }
+  100%{
+    opacity: 0;
+    display: none;
+  }
+ }
+.artical-layer-close-box{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  text-align: right;
+  padding: 1em;
+  -webkit-transition: all .4s ease-in;
+  -moz-transition: all .4s ease-in ;
+  -ms-transition: all .4s ease-in ;
+  -o-transition: all .4s ease-in ;
+  transition: all .4s ease-in ;
+}
+
+.artical-layer-close{
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 6px;
+  color:rgba(30,30,30,.2);
+  -webkit-transition: all .4s ease-in;
+  -moz-transition: all .4s ease-in ;
+  -ms-transition: all .4s ease-in ;
+  -o-transition: all .4s ease-in ;
+  transition: all .4s ease-in ;
+}
+.artical-layer-close:hover{
+  border: 1px solid rgba(220,220,220,.7);
+  background-color: rgba(120,220,120,.4);
+  color:rgba(255,255,255,1);
+  box-shadow: 0 0 5px 2px rgba(20,20,20,.26);
 }
