@@ -6,7 +6,7 @@ $(function(){
     });
     $('.main-nav>div').click(function(){
         $('.page-header').removeClass('hide').addClass('hide');
-        $('body').animate({scrollTop:0},700)
+        $('body').animate({scrollTop:0},300)
     })
     $('.main-nav>div.home').click(function(){
         $('.page-header').removeClass('hide');
