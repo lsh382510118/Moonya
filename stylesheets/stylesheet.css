@@ -7,7 +7,7 @@ body {
   overflow-y: auto;
   padding: 0;
   margin: 0;
-  font-family: "微软雅黑 Light","Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "微软雅黑 Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #606c71;
@@ -63,12 +63,26 @@ ul{
   color: #fff;
   text-align: center;
   background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957); }
+  background-image: linear-gradient(120deg, #155799, #159957);
+  -webkit-transition: .5s all ease-in-out;
+  -moz-transition: .5s all ease-in-out ;
+  -ms-transition: .5s all ease-in-out ;
+  -o-transition: .5s all ease-in-out ;
+  transition: .5s all ease-in-out ;
+  -webkit-transform-origin:top;
+  -moz-transform-origin:top;
+  -ms-transform-origin:top;
+  -o-transform-origin:top;
+  transform-origin:top; }
 
 @media screen and (min-width: 64em) {
   .page-header {
-    padding: 5rem 6rem; } }
-
+    padding: 0rem 6rem; }
+  .page-header.hide{
+    height: 0;
+    overflow: hidden;
+  }
+}
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .page-header {
     padding: 3rem 4rem; } }
@@ -85,7 +99,11 @@ ul{
   .project-name {
     font-size: 2.8rem;
     letter-spacing: .2em;
-    color: rgba(255,255,255,.8); } }
+    color: rgba(255,255,255,.8);
+    padding-top: 5rem}
+  .banner-btnBox{
+    padding-bottom: 5rem;
+  }}
 @media screen and (min-width: 64em) {
   .project-name span{
     font-size: 2.2rem;
