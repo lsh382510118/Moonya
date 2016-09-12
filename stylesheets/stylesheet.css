@@ -77,7 +77,18 @@ ul{
 
 @media screen and (min-width: 64em) {
   .page-header {
-    padding: 0rem 6rem; }
+    padding: 0rem 6rem;
+    -webkit-transition: .5s all ease-in-out;
+    -moz-transition: .5s all ease-in-out ;
+    -ms-transition: .5s all ease-in-out ;
+    -o-transition: .5s all ease-in-out ;
+    transition: .5s all ease-in-out ;
+    -webkit-transform-origin:top;
+    -moz-transform-origin:top;
+    -ms-transform-origin:top;
+    -o-transform-origin:top;
+    transform-origin:top;
+    height: 418px}
   .page-header.hide{
     height: 0;
     overflow: hidden;

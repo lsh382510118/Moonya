@@ -5,7 +5,10 @@ $(function(){
         setTimeout(function(){$('.artical-layer-wrap').remove();$('.artical-layer-box').hide();},700)
     });
     $('.main-nav>div').click(function(){
-        $('.page-header').addClass('hide');
+        $('.page-header').removeClass('hide').addClass('hide');
+    })
+    $('.main-nav>div.home').click(function(){
+        $('.page-header').removeClass('hide');
     })
 });
 //<div class="nav-box">
