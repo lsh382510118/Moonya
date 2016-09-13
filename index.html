@@ -15,7 +15,7 @@
 <body>
 <section class="page-header">
     <h1 class="project-name">如果你做的事情毫不费力，就是在浪费时间<span>——Heidi Roizen</span></h1>
-    <h2 class="project-tagline">月_霜影的个人微博</h2>
+    <h2 class="project-tagline">月_霜影的个人博客</h2>
     <div class="banner-btnBox">
       <a href="https://github.com/lsh382510118/yueshuangying.github.io" class="btn">MY blog project</a>
       <a href="https://github.com/lsh382510118/yueshuangying.github.io/zipball/master" class="btn">Download .zip</a>
@@ -24,12 +24,12 @@
 </section>
 <div class="nav-box">
   <nav class="main-nav">
-    <div class="active home">Home</div>
-    <div>HTML5/CSS3</div>
-    <div>JavaScript</div>
-    <div>Plug-in Unit</div>
-    <div>Awaken Artical</div>
-    <div>Test-Page</div>
+    <div class="active home" link="technology/home/homeArtical.html">Home</div>
+    <div link="technology/cssHtml/cssHtml.html">HTML5/CSS3</div>
+    <div link="technology/javascript/javascript.html">JavaScript</div>
+    <div link="technology/plugIn/plugIn.html">Plug-in Unit</div>
+    <div link="technology/AwakenArtial/AwakenArtial.html">Awaken Artical</div>
+    <div link="technology/TestPage/TestPage.html">Test-Page</div>
   </nav>
 </div>
 
@@ -60,14 +60,14 @@
 <footer class="site-footer">
   <p><b>邮箱：</b><a href="mailto:382510118@qq.com">382510118@qq.com</a><strong>or</strong><a href="mailto:382510118@qq.com">lian382510118@gmail.com</a></p>
   <p><b>QQ：</b>382510118</p>
-  <p><b>Motto：</b>The knowledge of the road far can not be measured，只希望自己如小学生般，懂得谦卑，懂的保持求知的欲望-Remind yourself</p>
+  <p><b>Motto：</b>The knowledge of the road far can not be measured，只希望自己如小学生般，懂得谦卑，保持求知的欲望-Remind yourself</p>
 </footer>
 <script>
   $('.main-nav>div').click(function(){
     $('.main-nav>div').removeClass('active');
     $(this).addClass('active');
   });
-  $('.artical-layer-box').on('click','.artical-layer-mark',function(){
+  $('.body').on('click','.artical-layer-mark',function(){
     $('.artical-layer-main').removeClass('in').removeClass('out').addClass('out');
     $('.artical-layer-mark').removeClass('in').removeClass('out').addClass('out');
     setTimeout(function(){$('.artical-layer-wrap').remove();$('.artical-layer-box').hide();},700)

@@ -78,7 +78,7 @@
 .wechat:before { content: "\e61e"; }
 .css3:before { content: "\e61f"; }
 .note:before { content: "\e645"; }
-.16hexuantu:before { content: "\e620"; }
+.hexuantu:before { content: "\e620"; }
 .tubiao08:before { content: "\e621"; }
 .tubiao04:before { content: "\e622"; }
 .play:before { content: "\e65e"; }
@@ -116,5 +116,5 @@
 .read:before { content: "\e638"; }
 .archery:before { content: "\e639"; }
 .top2:before { content: "\e63a"; }
-.19:before { content: "\e665"; }
+.nice:before { content: "\e665"; }
 .shui:before { content: "\e666"; }

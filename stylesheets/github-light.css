@@ -1,27 +1,3 @@
-/*
-The MIT License (MIT)
-
-Copyright (c) 2016 GitHub, Inc.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-*/
 
 .pl-c /* comment */ {
   color: #969896;
@@ -121,4 +97,38 @@ SOFTWARE.
 .pl-mo /* meta.output */ {
   color: #1d3e81;
 }
-
+.blue-ico{
+  background-color: #059bce;
+}
+.zi-ico{
+  background-color: #9c37cb;
+}
+.blue-ico{
+  background-color: #059bce;
+}
+.bgray-ico{
+  background-color: #3f455f;
+}
+.water-ico{
+  background-color: #34cccc;
+}
+.orange-ico{
+  background-color: #f48c1d;
+}
+.fen-ico{
+  background-color: #cb2249;
+}
+/*.water-ico{*/
+  /*background-color: #34cccc;*/
+/*}*/
+/*.water-ico{*/
+  /*background-color: #34cccc;*/
+/*}*/
+iframe{
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 6px;
+  box-shadow: inset 0 0 5px 2px rgba(100,100,100,.3);
+  padding: 15px;
+}
