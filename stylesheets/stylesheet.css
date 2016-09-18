@@ -637,7 +637,7 @@ ul{
 .plugobj{
   background-color: #fff;
   border-radius: 6px;
-  box-shadow: 0 0 1px 1px rgba(100,100,100,.1);
+  box-shadow: 0 0 3px 1px rgba(100,100,100,.4);
   overflow: hidden;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
