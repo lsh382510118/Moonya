@@ -11,7 +11,7 @@ $(function(){
         $('.main-nav-content').show();
         $('.main-nav-content').load(link);
     })
-    $('.main-nav>div.home').click(function(){
+    $('.main-nav>div#home').click(function(){
         $('.page-header').removeClass('hide');
     })
 });

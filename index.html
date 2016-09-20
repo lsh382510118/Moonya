@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="fonts/iconfont.css" media="screen">
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/ui.js"></script>
+  <script type="text/javascript" src="js/commonJs/common.js"></script>
 </head>
 <body>
 <section class="page-header">
@@ -22,8 +23,8 @@
     <!--<a href="https://github.com/lsh382510118/yueshuangying.github.io/tarball/master" class="btn">Download .tar.gz</a>-->
 </section>
 <div class="nav-box">
-  <nav class="main-nav">
-    <div class="active home" link="technology/home/homeArtical.html">Home</div>
+  <nav class="main-nav" id="mainNav">
+    <div class="active" id="home" link="technology/home/homeArtical.html">Home</div>
     <div link="technology/cssHtml/cssHtml.html">HTML5/CSS3</div>
     <div link="technology/javascript/javascript.html">JavaScript</div>
     <div link="technology/plugIn/plugIn.html">Plug-in Unit</div>
@@ -52,7 +53,7 @@
     </article>
   </section>
   <div class="artical-layer-box">
-    <iframe src="artical/articla-1.html" scrolling="no" id="articalIframe" style="display: none;">
+    <iframe src="artical/articla-1.html" scrolling="no" id="articalIframe" style="display: block;">
 
     </iframe>
   </div>
@@ -62,10 +63,14 @@
   <p><b>Motto：</b>The knowledge of the road far can not be measured，只希望自己如小学生般，懂得谦卑，保持求知的欲望-Remind yourself</p>
 </footer>
 <script>
-  $('.main-nav>div').click(function(){
-    $('.main-nav>div').removeClass('active');
-    $(this).addClass('active');
-  });
+  var tab = document.getElementById('mainNav');
+  var tabList = tab.getElementsByTagName('div');
+  for(var i=0;i<tabList.length;i++){
+    tabList[i].index = i;
+    tabList[i].onclick = function(){
+      tabFunc(this,this.index);
+    }
+  }
   $('.body').on('click','.artical-layer-mark',function(){
     $('.artical-layer-main').removeClass('in').removeClass('out').addClass('out');
     $('.artical-layer-mark').removeClass('in').removeClass('out').addClass('out');
