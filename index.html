@@ -70,6 +70,8 @@
     tabList[i].index = i;
     tabList[i].onclick = function(){
       tabFunc(this,this.index);
+      var link = this.getAttribute('link');
+      console.info(link);
     }
   }
   $('.body').on('click','.artical-layer-mark',function(){

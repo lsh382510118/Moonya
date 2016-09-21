@@ -1,17 +1,24 @@
 $(function(){
-    $('.artical-layer-box').on('click','.artical-layer-close',function(){
-        $('.artical-layer-main').removeClass('in').removeClass('out').addClass('out');
-        $('.artical-layer-mark').removeClass('in').removeClass('out').addClass('out');
-        setTimeout(function(){$('.artical-layer-wrap').remove();$('.artical-layer-box').hide();},700)
+    //SidleNav----侧边栏显示及其交互效果
+    setTimeout(function(){
+        $('.sidlenav-btn-wrap').removeClass('open');
+        $('.sidlenav').removeClass('show');
+    },800);
+
+    $('.sidlenav-btn-wrap').click(function(){
+        $('.sidlenav-btn-wrap').toggleClass('open');
+        $('.sidlenav').toggleClass('show');
     });
-    $('.main-nav>div').click(function(){
-        $('.page-header').removeClass('hide').addClass('hide');
-        $('body').animate({scrollTop:0},300);
-        var link = $(this).attr('link');
-        $('.main-nav-content').show();
-        $('.main-nav-content').load(link);
-    })
-    $('.main-nav>div.home').click(function(){
-        $('.page-header').removeClass('hide');
-    })
+    $('.side-nav>div').click(function(){
+        var acTop = $(this).position().top;
+        $('.side-nav>div').not(this).removeClass('active').addClass('nm');
+        $(this).css('top',acTop).addClass('active');
+        $(this).animate({
+            top:0},300);
+        $('.sub-nav').addClass('open');
+    });
+    $('.sidenav-info-open').click(function(){
+        $('.side-nav>div').removeClass('nm');
+        $('.sub-nav').removeClass('open');
+    });
 });
