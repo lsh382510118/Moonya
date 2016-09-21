@@ -493,7 +493,7 @@ table,tbody{
   width: 800px;
   left: 50%;
   top:50px;
-  margin-left: -400px;
+  margin-left: -500px;
   height: 32em;
   border: 1px solid #e3e3e3;
   box-shadow: 0 0 5px 2px rgba(0,0,0,.36);
@@ -661,11 +661,11 @@ table,tbody{
   border-radius: 6px;
   box-shadow: 0 0 3px 1px rgba(100,100,100,.4);
   overflow: hidden;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
   -webkit-transform-origin:center;
   -moz-transform-origin:center;
   -ms-transform-origin:center;

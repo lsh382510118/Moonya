@@ -74,7 +74,7 @@
       console.info(link);
     }
   }
-  $('.body').on('click','.artical-layer-mark',function(){
+  $('body').on('click','.artical-layer-mark',function(){
     $('.artical-layer-main').removeClass('in').removeClass('out').addClass('out');
     $('.artical-layer-mark').removeClass('in').removeClass('out').addClass('out');
     setTimeout(function(){$('.artical-layer-wrap').remove();$('.artical-layer-box').hide();},700)
