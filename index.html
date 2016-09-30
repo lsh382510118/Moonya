@@ -11,6 +11,8 @@
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/ui.js"></script>
   <script type="text/javascript" src="js/commonJs/common.js"></script>
+  <script type="text/javascript" src="js/commonJs/event.js"></script>
+  <script type="text/javascript" src="js/commonJs/function.js"></script>
 </head>
 <body>
 <section class="page-header">
@@ -52,6 +54,9 @@
       </ul>
     </article>
   </section>
+<div class="canvas-point">
+  <button class="test" id="test">测试</button>
+</div>
   <div class="artical-layer-box">
     <iframe src="artical/articla-1.html" scrolling="no" id="articalIframe" style="display: block;">
 
@@ -74,16 +79,22 @@
       console.info(link);
     }
   }
+  //  遮罩层-收起
   $('body').on('click','.artical-layer-mark',function(){
     $('.artical-layer-main').removeClass('in').removeClass('out').addClass('out');
     $('.artical-layer-mark').removeClass('in').removeClass('out').addClass('out');
     setTimeout(function(){$('.artical-layer-wrap').remove();$('.artical-layer-box').hide();},700)
   })
+//  首页-文章[airtical]弹出
   $('.list>li>a').click(function(){
     var link = $(this).attr('link');
-    $('.artical-layer-box').show();
     $('.artical-layer-box').load(link);
+    $('.artical-layer-box').show();
   })
+  var test =document.getElementById('test');
+  eventUtil.addHandler(test,'click',function(){
+    alert(1);
+  });
 </script>
 </body>
 </html>

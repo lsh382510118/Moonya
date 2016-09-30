@@ -50,7 +50,11 @@ table,tbody{
   transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
   .btn + .btn {
     margin-left: 1rem; }
-
+.clear:after{
+  content: '';
+  display: table;
+  clear: both;
+}
 .btn:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
@@ -953,3 +957,11 @@ table,tbody{
   top: 22px;
   left: 17px;
 }
+.btn-enlarge{
+  float: right;
+  margin-right: 2px;
+  background: #fff;
+  border: 0px solid #e3e3e3;
+  outline: none;
+}
+
