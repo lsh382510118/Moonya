@@ -192,7 +192,7 @@ var ctx = document.getElementById('canvas1').getContext('2d');
 var ctx2 = document.getElementById('canvas2').getContext('2d');
 $.ajax({
 	type:"POST",
-	url:"date/date.json"+'&check=true',
+	url:"date/date.json",
 	dataType:"json",
 	success: function(data){
 		var pointGroup=data.pointGroup;//节点组
