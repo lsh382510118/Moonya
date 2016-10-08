@@ -54,16 +54,19 @@
       </ul>
     </article>
   </section>
-
-<div class="canvas-point">
-  <div><i class="ico xiyan01"></i> </div>
-  <button class="test" id="test">测试</button>
+<div class="canvas-point canvasCode" id="canvasPoint">
+  <iframe src="canvasPoint.html" height="100%"></iframe>
 </div>
-  <div class="artical-layer-box">
+<div class="canvas-point DivCode" id="divPoint">
+  <iframe src="divPoint.html" height="100%"></iframe>
+</div>
+<div class="artical-layer-box">
     <iframe src="artical/articla-1.html" scrolling="no" id="articalIframe" style="display: block;">
 
     </iframe>
   </div>
+<div><i class="ico xiyan01"></i> </div>
+<button class="test" id="test">测试</button>
 <footer class="site-footer">
   <p><b>邮箱：</b><a href="mailto:382510118@qq.com">382510118@qq.com</a><strong>or</strong><a href="mailto:382510118@qq.com">lian382510118@gmail.com</a></p>
   <p><b>QQ：</b>382510118</p>
@@ -87,6 +90,10 @@
     $('.artical-layer-mark').removeClass('in').removeClass('out').addClass('out');
     setTimeout(function(){$('.artical-layer-wrap').remove();$('.artical-layer-box').hide();},700)
   })
+  $('#mainNav>div').click(function(){
+    $('#mainNav>div').removeClass('active');
+    $(this).removeClass('active').addClass('active');
+  });
 //  首页-文章[airtical]弹出
   $('.list>li>a').click(function(){
     var link = $(this).attr('link');

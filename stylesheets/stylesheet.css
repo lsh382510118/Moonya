@@ -964,4 +964,113 @@ table,tbody{
   border: 0px solid #e3e3e3;
   outline: none;
 }
+.pointBox,.canvas-point{
+  position: relative;
+  /*background-color: #041122;*/
+  height: 640px;
+  min-width: 1300px;
+  margin-top: 30px;
+  padding: 0 30px;
+}
+#canvas1,#canvas2{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+#canvas2{
+  z-index: 2;
+}
+.server{
+  /*opacity: .2;*/
+}
+.server{
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border: 2px solid #026e9d;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #444;
+  display: -webkit-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-pack: center;
+  box-pack: center;
+  border: 2px solid #fff;
+  cursor: move;
+  z-index: 15;
+}
+.server p{
+  line-height: 1.1;
+  padding: 0 3px;
+  /*padding-top:16px;*/
+  display: inline-block;
 
+}
+.server.state-err{
+  background: #ff3630;
+  color: #fff;}
+.shadow-spread{
+  animation-delay: 0s;
+  -webkit-animation:shadowSpread 2s ease infinite;
+  animation:shadowSpread 2s linear infinite;
+}
+
+.shadow-spread.state-err{
+  animation-delay: 0s;
+  -webkit-animation:shadowSpreadError 1s ease infinite;
+  animation:shadowSpreadError 1s linear infinite;
+}
+
+@keyframes shadowSpread{
+  0%{
+    box-shadow:0 0 2px 2px rgba(126, 206, 250,0),0 0 8px 3px rgba(255,255,255,.5);
+  }
+  50%{
+    box-shadow:0 0 15px 2px rgba(126, 206, 250,.7);
+  }
+  /*131, 206, 23*/
+  100%{
+    box-shadow:0 0 2px 2px rgba(126, 206, 250,0),0 0 8px 3px rgba(255,255,255,.5);
+  }
+}
+
+@keyframes shadowSpreadError{
+  0%{
+    box-shadow:0 0 2px 2px rgba(244, 28, 32,0.2),0 0 8px 3px rgba(255,255,255,.3);
+  }
+  50%{
+    box-shadow:0 0 15px 5px rgba(244, 28, 32,1);
+  }
+  100%{
+    box-shadow:0 0 2px 2px rgba(244, 28, 32,0.2),0 0 8px 3px rgba(255,255,255,.3);
+
+  }
+}
+@-webkit-keyframes shadowSpread{
+  0%{
+    box-shadow:0 0 2px 2px rgba(126, 206, 250,0),0 0 8px 3px rgba(255,255,255,.5);
+  }
+  50%{
+    box-shadow:0 0 15px 2px rgba(126, 206, 250,.7);
+  }
+  /*131, 206, 23*/
+  100%{
+    box-shadow:0 0 2px 2px rgba(126, 206, 250,0),0 0 8px 3px rgba(255,255,255,.5);
+  }
+}
+
+@-webkit-keyframes shadowSpreadError{
+  0%{
+    box-shadow:0 0 2px 2px rgba(244, 28, 32,0.2),0 0 8px 3px rgba(255,255,255,.3);
+  }
+  50%{
+    box-shadow:0 0 15px 5px rgba(244, 28, 32,1);
+  }
+  100%{
+    box-shadow:0 0 2px 2px rgba(244, 28, 32,0.2),0 0 8px 3px rgba(255,255,255,.3);
+  }
+}

@@ -1,0 +1,16 @@
+{"pointGroup":[
+	{"id":"point1","name":"name1","top":"40","left":"150","state":"0","toP":"point2;point3"
+	},
+	{"id":"point2","name":"name2","top":"180","left":"50","state":"1","toP":"point3;point5;point7"
+	},
+	{"id":"point3","name":"name3","top":"220","left":"450","state":"1","toP":"point6;point7"
+	},
+	{"id":"point4","name":"name4","top":"465","left":"741","state":"1","toP":"point1;point7"
+	},
+	{"id":"point5","name":"name5","top":"236","left":"887","state":"1","toP":"point6"
+	},
+	{"id":"point6","name":"name6","top":"106","left":"630","state":"0","toP":"point1"
+	},
+	{"id":"point7","name":"name7","top":"436","left":"200","state":"1","toP":"point5"}
+]
+}

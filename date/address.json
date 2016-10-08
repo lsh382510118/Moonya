@@ -1,0 +1,33 @@
+{"address":[
+	{"provinceid":"s1","name":"福建省","city":[
+		{"cityid":"s1c1","cityname":"福州","usiness":[
+			{"name":"营业厅11"},
+			{"name":"营业厅12"}
+		]},
+		{"cityid":"s1c3","cityname":"厦门","usiness":[
+			{"name":"营业厅31"},
+			{"name":"营业厅32"}
+		]},
+		{"cityid":"s1c2","cityname":"泉州","usiness":[
+			{"name":"营业厅21"},
+			{"name":"营业厅22"}
+		]}
+	]},
+	{"provinceid":"s2","name":"浙江省","city":[
+		{"cityid":"s2c1","cityname":"宁波","usiness":[
+			{"name":"营业厅11"},
+			{"name":"营业厅12"}
+		]},
+		{"cityid":"s2c1","cityname":"杭州","usiness":[
+		{"name":"营业厅21"},
+		{"name":"营业厅22"}
+		]}
+	]},
+	{"provinceid":"s3","name":"四川","city":[
+		{"cityid":"s3c1","cityname":"成都","usiness":[
+		{"name":"营业厅11"},
+		{"name":"营业厅12"},
+		{"name":"营业厅13"}]}
+	]}	
+]
+}
