@@ -107,42 +107,73 @@ body{
 	</div>
 </div>
 <script type="text/javascript">
-$.ajax({
-	type:"POST",
-	url:"date/test.json",
-	dataType:"json",
-	success: function(data){
-		var pointGroup=data.pointGroup;//节点组
-		var pointRelation=data.pointRelation;//节点联系
-		addPoint(data);//创建节点
-		drawAllLine();//绘制初始点和线
-		$('.server').each(function(){
-			$(this).dragDiv(10,10);
-//			delSign($(this));
-		})
+	var point = {"pointGroup":[
+		{"id":"point1","name":"name1","top":"40","left":"150","state":"0","toP":[
+			{"toPointId":"point2","toPointState":"1"},{"toPointId":"point3","toPointState":"0"}
+		]},
+		{"id":"point2","name":"name2","top":"180","left":"50","state":"1","toP":[
+			{"toPointId":"point3","toPointState":"1"}
+		]},
+		{"id":"point3","name":"name3","top":"190","left":"450","state":"1","toP":[
+			{"toPointId":"point4","toPointState":"1"}
+		]},
+		{"id":"point4","name":"name4","top":"420","left":"750","state":"1","toP":[
+			{"toPointId":"point1","toPointState":"1"}
+		]},
+		{"id":"point5","name":"name5","top":"236","left":"887","state":"1","toP":[
+			{"toPointId":"point6","toPointState":"1"}
+		]},
+		{"id":"point6","name":"name6","top":"106","left":"630","state":"0","toP":[
+			{"toPointId":"point1","toPointState":"0"}
+		]}
+	]
 	}
-	
-});	
-$.ajax({
-	type:"POST",
-	url:"date/date.json",
-	dataType:"json",
-	success: function(data){
-		var pointGroup=data.pointGroup;//节点组
-		var pointRelation=data.pointRelation;//节点联系
-		addNewPoint(pointGroup);//创建新增节点列表
-		addRelaPoint(pointGroup);//创建子节点列表
-		$('.add-panel .newpoint').each(function(){
-			$(this).bind('click',function(){
-				newpoint($(this));
-			});
-		})
-		$('.addrelation-panel .newpoint').click(function(){
-			$(this).toggleClass('sel');
-		});
-	}
-	
-});	
+//	console.info(point.pointGroup);
+	var pointRelation=point.pointRelation;//节点联系
+	addPoint(point);//创建节点
+	drawAllLine();//绘制初始点和线
+	$('.server').each(function(){
+		$(this).dragDiv(10,10);
+	})
+
+	//**********************浏览器限制访问本地文件，以下ajax，用于以后一些环境**********************
+//$.ajax({
+//	type:"POST",
+//	url:"date/test.json",
+//	dataType:"json",
+//	success: function(data){
+//		var pointGroup=data.pointGroup;//节点组
+//		console.info(pointGroup.length);
+//		var pointRelation=data.pointRelation;//节点联系
+//		addPoint(data);//创建节点
+//		drawAllLine();//绘制初始点和线
+//		$('.server').each(function(){
+//			$(this).dragDiv(10,10);
+//		})
+//	}
+//});
+
+	//**********************木有用的  备份**********************
+//$.ajax({
+//	type:"POST",
+//	url:"date/date.json",
+//	dataType:"json",
+//	success: function(data){
+//		var pointGroup=data.pointGroup;//节点组
+//		var pointRelation=data.pointRelation;//节点联系
+//		addNewPoint(pointGroup);//创建新增节点列表
+//		addRelaPoint(pointGroup);//创建子节点列表
+//		$('.add-panel .newpoint').each(function(){
+//			$(this).bind('click',function(){
+//				newpoint($(this));
+//			});
+//		})
+//		$('.addrelation-panel .newpoint').click(function(){
+//			$(this).toggleClass('sel');
+//		});
+//	}
+//
+//});
 </script> 
 </body>
 </html>
