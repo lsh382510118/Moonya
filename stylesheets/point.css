@@ -1,5 +1,21 @@
-div{
-	box-sizing: border-box;
+@charset "utf-8";
+/* CSS Document */
+body,html{
+	height: 100%;
+	width: 100%;
+}
+*{ margin:0px; padding:0px;font-family:"微软雅黑"; box-sizing: border-box;font-size: 14px;}
+.title{
+	position: absolute;
+	color: #fff;
+	border: 3px solid #f3f3f3;
+	padding: .5em 3em;
+	border-radius: 5em;
+	text-align: center;
+	top: 15px;
+	left: 50%;
+	margin-left: -4.5em;
+	opacity: .6;
 }
 .main{
 	height: 100%;
@@ -64,11 +80,11 @@ div{
 }
 .shadow-spread.state-err{
 	animation-delay: 0s;
-	-webkit-animation:'shadow-spread-error' 1s ease infinite;
+	-webkit-animation:shadow-spread-error 1s ease infinite;
 	-moz-animation:shadow-spread-error 1s ease infinite;
-	animation:'shadow-spread-error' 1s linear infinite;
+	animation:shadow-spread-error 1s linear infinite;
 }
-@-webkit-keyframes 'shadow-spread'{
+@-webkit-keyframes shadow-spread{
 	0%{
 		box-shadow:0 0 2px 2px rgba(126, 206, 250,0),0 0 8px 3px rgba(255,255,255,.5);
 	}
@@ -93,7 +109,7 @@ div{
 	}
 }
 
-@-webkit-keyframes 'shadow-spread-error'{
+@-webkit-keyframes shadow-spread-error{
 	0%{
 		box-shadow:0 0 2px 2px rgba(244, 28, 32,0.2),0 0 8px 3px rgba(255,255,255,.3);
 	}
@@ -245,19 +261,19 @@ div{
 	
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
- 　　     color: #999;
+ 　　color: #999;
  	font-size: 10px;
 }
 input:-moz-placeholder, textarea:-moz-placeholder {
- 　　	color:#999;
+　　color:#999;
  	font-size: 10px;
 }
 input::-moz-placeholder, textarea::-moz-placeholder {
- 　	color:#999;
+ 　color:#999;
  	font-size: 10px;
 }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
- 　　	color:#999;
+　　color:#999;
  	font-size: 10px;
 }
 ::-moz-placeholder {
