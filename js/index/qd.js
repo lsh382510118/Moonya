@@ -38,7 +38,7 @@ $(function(){
 
 function drawActive(pointRelation,ctx2){
 	var timeGo=0;
-	var radius=($('.server').width())/2;
+	var radius=parseInt(($('.server').width()))/2;
 	setInterval(function(){
 		ctx2.clearRect(0,0,1000,1000);
 		timeGo++;
@@ -51,10 +51,14 @@ function drawActive(pointRelation,ctx2){
 			for(var j=0;j<topointGround.length;j++){	
 				var FormPoint = $(pointGroup[i]);
 				var ToPoint = $("#"+topointGround[j]);
-				var fx=parseInt(FormPoint.position().left)+radius;
-				var fy=parseInt(FormPoint.position().top)+radius;
-				var tx=parseInt(ToPoint.position().left)+radius;
-				var ty=parseInt(ToPoint.position().top)+radius;
+				var fx=parseInt($(FormPoint).position().left)+radius;
+				var fy=parseInt($(FormPoint).position().top)+radius;
+				var tx=parseInt($(ToPoint).position().left)+radius;
+				var ty=parseInt($(ToPoint).position().top)+radius;
+				//var fx=parseInt(FormPoint[0].offsetLeft) + radius;
+				//var fy=parseInt(FormPoint.offset().top) + radius;
+				//var tx=parseInt(ToPoint[0].offsetLeft) + radius;
+				//var ty=parseInt(ToPoint.offset().top) + radius;
 				var ToState = ToPoint.attr('state');
 				var FormState = FormPoint.attr('state');
 //				var pTopState = pointRelation[i].toP[j].toPointState;	

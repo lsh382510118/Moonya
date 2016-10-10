@@ -9,10 +9,13 @@ $(function(){
         $('.layer-mark').removeClass('in').removeClass('out').addClass('out');
         setTimeout(function(){$('.artical-layer-wrap').remove();$('.layer-box').hide();},700)
     })
+
+    $('.plugin-box ').on('click','#btnEnlarge',openHtml)
     var btnEnlarge = document.getElementById('btnEnlarge');
     function openHtml(){
         var PlugInhHtmlPage = document.getElementById('PlugInhHtmlPage');
         var link = PlugInhHtmlPage.getAttribute('src');
         window.open(link, 'newwindow', 'height=600, width=800, top=0, left=0, toolbar=no, menubar=no');
     }
+    //eventUtil.addHandler(btnEnlarge,'click',openHtml);
 });
