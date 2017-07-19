@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>This Just a Play</title>
+    <link rel="stylesheet" type="text/css" href="sass/style.css">
+</head>
+<body>
+<!--header-->
+    <header>
+        <h1 class="header-title">HTML - Study</h1>
+        <nav class="header-nav">
+            <div class="header-nav-item active">大纲</div>
+            <div class="header-nav-item">header-nav-02</div>
+            <div class="header-nav-item">header-nav-03</div>
+            <div class="header-nav-item">header-nav-04</div>
+        </nav>
+    </header>
+
+    <!--main-->
+    <main>
+        <aside>
+            <nav class="aside-nav">
+                <div class="aside-nav-item active">第1阶段</div>
+                <div class="aside-nav-item ">第2阶段</div>
+                <div class="aside-nav-item">第3阶段</div>
+                <div class="aside-nav-item">第4阶段</div>
+                <div class="aside-nav-item">第5阶段</div>
+                <div class="aside-nav-item">第6阶段</div>
+            </nav>
+        </aside>
+        <article class="main-r">
+            <h2>-- Stage  --  </h2>
+            <h3> 第1阶段 -- 一片空白</h3>
+            <article class="stage-panel">
+                <div class="stage-features">
+                    <h4>阶段描述</h4>
+                    <p class="stage-features-detail">这个阶段，一个字形容“空”、两个字“空白”</p>
+                </div>
+                <div class="stage-list-wrap">
+                    <h4>阶段须知</h4>
+                    <div class="stage-list">
+                        <div class="stage-panel-item" href="#">HTML 是一门什么样的语言？
+                            <div class="solve-panel">看书-看入门书籍-<a href="http://pan.baidu.com/s/1i4LPimx">《HTML与CSS入门经典_第9版》</a></div>
+                        </div>
+                        <div class="stage-panel-item" href="#">搭建基本demo(模板)</div>
+                        <div class="stage-panel-item" href="#">常用标签？</div>
+                        <div class="stage-panel-item" href="#">ps：最好能懂得文档模式，当然鉴于空白阶段，后续补习</div>
+                    </div>
+                </div>
+            </article>
+        </article>
+    </main>
+
+
+<!--layer-->
+<div class="layer">
+    <div class="layer-wrap">
+        <div class="layer-mark in"></div>
+        <div class="layer-main in"></div>
+    </div>
+</div>
+
+<!--////////
+////////////////////////////////////////////////////////////////////////-->
+<!--javascritp-->
+<script src="../js/jquery.min.js"></script>
+<script>
+
+    $('.layer-mark').click(function () {
+        $('.layer-mark,.layer-main').removeClass('in').addClass('out')
+    })
+//    nav-tab -js
+    $('.header-nav-item,.aside-nav-item').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    })
+</script>
+</body>
+</html>
