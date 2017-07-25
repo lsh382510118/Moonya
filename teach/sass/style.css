@@ -31,7 +31,11 @@ body {
   font-family: '微软雅黑 Light';
   padding-top: 80px;
   background-color: #f7f7f7;
-  position: relative; }
+  position: relative;
+  min-height: 500px; }
+
+pre {
+  font: inherit; }
 
 /*top is reset*/
 header {
@@ -48,7 +52,8 @@ header {
   box-shadow: 0 3px 3px rgba(48, 194, 197, 0.4);
   position: absolute;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 99; }
 
 .header-title {
   color: #30c2c5;
@@ -95,8 +100,7 @@ main {
   margin-left: 20px;
   background-color: #fff;
   -webkit-flex: 1;
-  flex: 1;
-  padding: 15px; }
+  flex: 1; }
 
 aside {
   width: 180px;
@@ -154,18 +158,47 @@ h3 {
   position: relative; }
   .stage-panel-item:before {
     content: counter(stgelist) "."; }
+  .stage-panel-item:hover .solve-panel {
+    visibility: visible;
+    opacity: 1;
+    bottom: 100%; }
 
 .solve-panel {
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  visibility: hidden;
+  opacity: 0;
   counter-reset: stgelist;
   position: absolute;
-  bottom: 100%; }
+  bottom: 50%;
+  left: 50px;
+  right: 0;
+  color: #666; }
+  .solve-panel:after {
+    content: '';
+    display: block;
+    width: 20px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.1));
+    height: 10px;
+    box-sizing: border-box;
+    margin-top: -1px;
+    margin-left: 20px; }
+  .solve-panel .solve-panel-main {
+    padding: 15px;
+    box-shadow: 1px -1px 6px rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+    border: 1px solid #e3e3e3; }
 
 .stage-features {
   margin: 15px 0; }
   .stage-features .stage-features-detail {
     font-size: 14px;
     color: #666;
-    padding: 10px 15px; }
+    padding: 10px 15px;
+    text-indent: 2em; }
 
 .layer {
   position: fixed;
@@ -217,6 +250,40 @@ h3 {
       -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
 
+.solve-panel {
+  max-height: 300px;
+  overflow-y: auto; }
+
+.division {
+  color: #ddd; }
+
+.tips {
+  font-size: 12px;
+  padding: 20px 0;
+  color: #999; }
+
+.stage-panel-title {
+  cursor: pointer;
+  display: inline-block; }
+
+.main-r {
+  position: relative;
+  overflow-x: hidden; }
+
+.main-r-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  padding: 15px;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 1s cubic-bezier(0.49, 0.96, 0.36, 1.33) 0s;
+  transition: all 1s cubic-bezier(0.49, 0.96, 0.36, 1.33) 0s; }
+  .main-r-item.active {
+    opacity: 1;
+    left: 0; }
+
 @-webkit-keyframes layer-main-out {
   0% {
     top: 5%;
@@ -258,5 +325,12 @@ h3 {
   100% {
     left: 100%;
     opacity: 0; } }
+.demo {
+  color: #333;
+  border: 1px solid #e3e3e3;
+  background-color: #f8f8f8;
+  margin: 10px 20px 30px 40px;
+  padding: 40px 30px 20px 10px;
+  font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */
