@@ -27,6 +27,26 @@ a {
   a:hover {
     color: #f69a12; }
 
+/*滚动条loading start*/
+::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece {
+  width: 8px;
+  border-radius: 0px;
+  background: rgba(100, 100, 100, 0); }
+
+::-webkit-scrollbar:hover {
+  border-radius: 0px;
+  background: rgba(100, 100, 100, 0.1);
+  cursor: all-scroll; }
+
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  border-radius: 6px;
+  background: rgba(180, 180, 180, 0.3); }
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(180, 180, 180, 0.7); }
+
+/*滚动条loading end*/
 body {
   font-family: '微软雅黑 Light';
   padding-top: 80px;
@@ -92,8 +112,11 @@ header {
 
 main {
   height: 100%;
-  display: -webkit-flex;
-  display: flex; }
+  overflow: hidden; }
+  main .page {
+    height: 100%;
+    display: -webkit-flex;
+    display: flex; }
 
 .main-r {
   height: 100%;
@@ -190,7 +213,9 @@ h3 {
     padding: 15px;
     box-shadow: 1px -1px 6px rgba(0, 0, 0, 0.4);
     background-color: #fff;
-    border: 1px solid #e3e3e3; }
+    border: 1px solid #e3e3e3;
+    max-height: 250px;
+    overflow-y: auto; }
 
 .stage-features {
   margin: 15px 0; }
@@ -249,10 +274,6 @@ h3 {
       animation: layer-main-out 0.7s cubic-bezier(0, 1.16, 0.37, 1.48);
       -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
-
-.solve-panel {
-  max-height: 300px;
-  overflow-y: auto; }
 
 .division {
   color: #ddd; }
@@ -325,12 +346,5 @@ h3 {
   100% {
     left: 100%;
     opacity: 0; } }
-.demo {
-  color: #333;
-  border: 1px solid #e3e3e3;
-  background-color: #f8f8f8;
-  margin: 10px 20px 30px 40px;
-  padding: 40px 30px 20px 10px;
-  font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */

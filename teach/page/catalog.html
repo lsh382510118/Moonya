@@ -1,0 +1,195 @@
+<div class="page">
+    <aside>
+        <nav class="aside-nav">
+            <div class="aside-nav-item " data-link="stage1">第1阶段 -- 空白</div>
+            <div class="aside-nav-item active" data-link="stage2">第2阶段 -- 入门</div>
+            <div class="aside-nav-item" data-link="stage3">第3阶段</div>
+            <div class="aside-nav-item" data-link="stage4">第4阶段</div>
+            <div class="aside-nav-item" data-link="stage5">第5阶段</div>
+            <div class="aside-nav-item" data-link="stage6">第6阶段</div>
+        </nav>
+    </aside>
+    <article class="main-r">
+        <!--第1阶段          空白-->
+        <div class="main-r-item active" id="stage1">
+            <h2>-- Stage -- </h2>
+            <h3> 第1阶段 -- 空白</h3>
+            <article class="stage-panel">
+                <div class="stage-features">
+                    <h4>阶段描述</h4>
+                    <p class="stage-features-detail">这个阶段，一个字形容“空”、两个字“空白”</p>
+                </div>
+                <div class="stage-list-wrap">
+                    <h4>阶段须知</h4>
+                    <div class="stage-list">
+                        <div class="stage-panel-item">
+                            <p class="stage-panel-title">HTML 是一门什么样的语言？</p>
+                            <div class="solve-panel">
+                                <div class="solve-panel-main">看书-看入门书籍-<a href="http://pan.baidu.com/s/1i4LPimx"
+                                                                          target="_blank">《HTML与CSS入门经典_第9版》</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stage-panel-item">
+                            <p class="stage-panel-title">搭建基本demo(模板)</p>
+                            <div class="solve-panel">
+                                <div class="solve-panel-main">
+                                    <pre>
+                                        &lt; !doctype html >          -- 决定浏览器的渲染模式[标准模式 | 怪异模式]
+                                        &lt;html>                           -- 这里是整个页面的开始，也是根节点
+                                            &lt;head> &lt;/head>    -- 编码、样式表引入、js引入（后面会讲到，JS引入其实放在body内部的最底下，
+                                                                               其实是最合理的）、meta的各种效果控制
+                                            &lt;body> &lt;/body>    -- 这里是页面的展示内容，放在body的内容才是可见的
+                                        &lt;/html>
+                                    </pre>
+                                    <p class=""> html,head,body是html中最基础的3个元素, 而&lt; !doctype html >
+                                        则决定浏览器的渲染方式（以后会提到） </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stage-panel-item">
+                            <p class="stage-panel-title">常用标签？</p>
+                            <div class="solve-panel">
+                                <div class="solve-panel-main">
+                                    <div>
+                                        <h5>块状</h5>
+                                        <p>div、p、ul、ol、li、h1-h6 ....(HTML5:header、main、article....) 当然还有很多。只是用的相对较少</p>
+                                        <h5>内联</h5>
+                                        <p>span、a、em、i、、b、strong、font、img、lable........(当然这也不是全部)</p>
+                                        <h5>内联块状</h5>
+                                        <p>所有的表单元素</p>
+                                        <div class="division">----------------------- 这只是分割线 -----------------------
+                                        </div>
+                                        <h5>table</h5>
+                                        <p>table</p>
+                                    </div>
+                                    <p class="tips">这儿都是常用的，W3C上差不多有110个左右，当然也还有一些没公布出来的，但是那些几乎不会用到。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="stage-panel-item" href="#">ps：最好能懂得文档模式，当然鉴于空白阶段，后续补习</div>-->
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!--第2阶段         入门-->
+        <div class="main-r-item" id="stage2">
+            <h2>-- Stage -- </h2>
+            <h3> 第2阶段 -- 入门</h3>
+            <article class="stage-panel">
+                <div class="stage-features">
+                    <h4>阶段描述</h4>
+                    <p class="stage-features-detail">
+                        对HTML有一丢丢的了解，知道搭建基本的demo,知道基本的几个标签，比如div,p,span,a等等。。但是，不知道这些元素的特性。对块状、内联、块状内联样式规则的概念模糊</p>
+                </div>
+                <div class="stage-list-wrap">
+                    <h4>阶段须知</h4>
+                    <div class="stage-list">
+                        <div class="stage-panel-item">
+                            <p class="stage-panel-title">开始全面了解各种常用标签，而不是局限于以上几个 【可以先放弃HTML5新增的标签，贪多嚼不烂】 </p>
+                            <div class="solve-panel">
+                                <div class="solve-panel-main">
+                                    <p>可以去一些网站系统看几遍，比如：</p>
+                                    <p><a href="https://www.w3cschool.cn/html5/html5-doctype.html"
+                                          target="_blank">W3Cschool</a></p>
+                                    <p><a href="http://www.runoob.com/tags/html-reference.html"
+                                          target="_blank">菜鸟学院</a></p>
+                                    <p><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Introduction#标签"
+                                          target="_blank">高大上的网站 -- MDN </a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stage-panel-item">
+                            <p class="stage-panel-title">了解css的常用样式</p>
+                            <div class="solve-panel">
+                                <div class="solve-panel-main">
+                                    <p><a href="http://techbrood.com/h5b2a?p=css-basics"
+                                          target="_blank">踏得网</a> - - css基础知识</p>
+                                    <p><a href="http://css.doyoe.com/#support3"
+                                          target="_blank">API</a> -- 85%的样式规则</p>
+                                    <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS"
+                                          target="_blank">MDN</a>   -- 除了W3C官网联盟之外 ，俺觉得是最好的知识库--仅限俺大前端[pis：右上方又语言选择-中文简体]</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stage-panel-item">
+                            <p class="stage-panel-title">尝试编写一些页面模块 </p>
+                            <div class="solve-panel">
+                                <div class="solve-panel-main">
+                                    <div>
+                                        <h5>& 由组件库入手 </h5>
+                                        <p><a href="http://v3.bootcss.com/components/#thumbnails-custom-content"
+                                              target="_blank">boostrap</a> - - 可以自己查看一些组件的效果图，然后自己编写出来</p>
+                                        <h5>& 简单的网页入手 </h5>
+                                        <p><a href="http://v3.bootcss.com/components/#thumbnails-custom-content"
+                                              target="_blank">1.百度搜索页</a> - - 非常简单的布局，用于入门编程蛮适合的</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!--第3阶段         登堂-->
+        <div class="main-r-item" id="stage3">
+            <h2>-- Stage -- </h2>
+            <h3> 第3阶段 -- 登堂</h3>
+            <article class="stage-panel">
+                <div class="stage-features">
+                    <h4>阶段描述</h4>
+                    <p class="stage-features-detail">知道大部分的标签及其自带样式(默认样式)，知道大部门的样式规则，并且用其构建出页面</p>
+                </div>
+                <div class="stage-list-wrap">
+                    <h4>阶段须知</h4>
+                    <div class="stage-list">
+                        <div class="stage-panel-item">
+                            <p class="stage-panel-title">开始全面了解各种常用标签，而不是局限于以上几个 【可以先放弃HTML5新增的标签，贪多嚼不烂】 </p>
+                            <div class="solve-panel">
+                                <div class="solve-panel-main">
+                                    <p>可以去一些网站系统看几遍，比如：</p>
+                                    <p><a href="https://www.w3cschool.cn/html5/html5-doctype.html"
+                                          target="_blank">W3Cschool</a></p>
+                                    <p><a href="http://www.runoob.com/tags/html-reference.html"
+                                          target="_blank">菜鸟学院</a></p>
+                                    <p><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Introduction#标签"
+                                          target="_blank">高大上的网站 -- MDN </a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stage-panel-item">
+                            <p class="stage-panel-title">了解css的常用样式</p>
+                            <div class="solve-panel">
+                                <div class="solve-panel-main">
+                                    <p><a href="http://techbrood.com/h5b2a?p=css-basics"
+                                          target="_blank">踏得网</a> - - css基础知识</p>
+                                    <p><a href="http://css.doyoe.com/#support3"
+                                          target="_blank">API</a> -- 85%的样式规则</p>
+                                    <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS"
+                                          target="_blank">MDN</a>   -- 除了W3C官网联盟之外 ，俺觉得是最好的知识库--仅限俺大前端[pis：右上方又语言选择-中文简体]</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stage-panel-item">
+                            <p class="stage-panel-title">尝试编写一些页面模块 </p>
+                            <div class="solve-panel">
+                                <div class="solve-panel-main">
+                                    <div>
+                                        <h5>& 由组件库入手 </h5>
+                                        <p><a href="http://v3.bootcss.com/components/#thumbnails-custom-content"
+                                              target="_blank">boostrap</a> - - 可以自己查看一些组件的效果图，然后自己编写出来</p>
+                                        <h5>& 简单的网页入手 </h5>
+                                        <p><a href="http://v3.bootcss.com/components/#thumbnails-custom-content"
+                                              target="_blank">1.百度搜索页</a> - - 非常简单的布局，用于入门编程蛮适合的</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </article>
+</div>

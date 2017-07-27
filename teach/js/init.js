@@ -8,6 +8,15 @@ var init = {
         $('.aside-nav-item').eq(index).addClass('active').siblings().removeClass('active');
         init.asideMapping();
     },
+    headlocation : function(){
+        var index =parseInt( localStorage.getItem('head_nav_index') );
+        $('.header-nav-item').eq(index).addClass('active').siblings().removeClass('active');
+        init.headMapping();
+    },
+    headMapping : function(){
+        var link = $('.header-nav-item.active').data('link');
+        $('#pageView').load(link);
+    },
     asideMapping : function(){
         var link = $('.aside-nav-item.active').data('link');
         $('.main-r-item').removeClass('active').siblings('#'+link).addClass('active');
