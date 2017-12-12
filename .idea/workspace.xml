@@ -28,8 +28,8 @@
           <file leaf-file-name="repayment_plan4.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sunl-part1/repayment_plan4.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="723">
-                  <caret line="109" column="64" selection-start-line="109" selection-start-column="64" selection-end-line="109" selection-end-column="64" />
+                <state relative-caret-position="459">
+                  <caret line="123" column="34" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
@@ -59,8 +59,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sunl-part1/repayment_plan4.html" />
         <option value="$PROJECT_DIR$/sunl-part1/scss/main.scss" />
+        <option value="$PROJECT_DIR$/sunl-part1/repayment_plan4.html" />
       </list>
     </option>
   </component>
@@ -224,15 +224,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513070141936</updated>
-      <workItem from="1513070143144" duration="195000" />
+      <workItem from="1513070143144" duration="242000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195000" />
+    <option name="totallyTimeSpent" value="242000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.100105375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -269,18 +269,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sunl-part1/repayment_plan4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="723">
-          <caret line="109" column="64" selection-start-line="109" selection-start-column="64" selection-end-line="109" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sunl-part1/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="699">
           <caret line="1555" column="18" selection-start-line="1555" selection-start-column="18" selection-end-line="1555" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sunl-part1/repayment_plan4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="123" column="34" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
           <folding />
         </state>
       </provider>
