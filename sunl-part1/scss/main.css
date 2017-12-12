@@ -1360,4 +1360,8 @@ input::-webkit-input-placeholder {
 .makeplan-swiper {
   height: 6.5rem; }
 
+.plan4-inputwrap {
+  position: relative;
+  z-index: 999; }
+
 /*# sourceMappingURL=main.css.map */
