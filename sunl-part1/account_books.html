@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <title>账本</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="scss/main.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper-3.4.2.min.css" rel="stylesheet" type="text/css">
+    <script src="js/rem.js"></script>
+</head>
+<body>
+<div class="out-wrap">
+    <div class="header">
+        <div class="header-l"></div>
+        <div class="header-m">注册</div>
+        <div class="header-r" id="booksCheck">筛选</div>
+    </div>
+    <div class="footer">
+        <div class="footer-nav clear">
+            <a href="index.html" class="footer-nav-item ">
+                <i class="footer-nav-ico footer-nav-ico1"></i>
+                <p class="footer-nav-txt">首页</p>
+            </a>
+            <a href="account_books.html" class="footer-nav-item active">
+                <i class="footer-nav-ico footer-nav-ico2"></i>
+                <p class="footer-nav-txt">账本</p>
+            </a>
+            <a href="application.html" class="footer-nav-item">
+                <i class="footer-nav-ico footer-nav-ico3"></i>
+                <p class="footer-nav-txt">应用</p>
+            </a>
+            <a href="me.html" class="footer-nav-item">
+                <i class="footer-nav-ico footer-nav-ico4"></i>
+                <p class="footer-nav-txt">我的</p>
+            </a>
+        </div>
+    </div>
+    <div class="containt">
+        <ul class="books-list">
+            <li class="books-list-item">
+                <div class="books-list-top flex-sw">
+                    <span class="books-list-cardID">尾号(6712)</span>
+                    <span class="books-list-time">2017-12-1  12:00</span>
+                </div>
+                <div class="books-list-bottom flex-sw">
+                    <span class="books-list-result">充值成功</span>
+                    <span class="books-list-num">+200.00</span>
+                </div>
+            </li>
+            <li class="books-list-item withdrawals">
+                <div class="books-list-top flex-sw">
+                    <span class="books-list-cardID">尾号(6712)</span>
+                    <span class="books-list-time">2017-12-1  12:00</span>
+                </div>
+                <div class="books-list-bottom flex-sw">
+                    <span class="books-list-result">提现成功</span>
+                    <span class="books-list-num sub">-200.00</span>
+                </div>
+            </li>
+            <li class="books-list-item">
+                <div class="books-list-top flex-sw">
+                    <span class="books-list-cardID">尾号(6712)</span>
+                    <span class="books-list-time">2017-12-1  12:00</span>
+                </div>
+                <div class="books-list-bottom flex-sw">
+                    <span class="books-list-result false">充值失败</span>
+                    <span class="books-list-num ">+200.00</span>
+                </div>
+            </li>
+        </ul>
+        <div class="books-pop">
+            <div class="books-pop-mark">
+                <div class="books-pop-main">
+                    <span class="books-pop-third"></span>
+                    <div class="books-pop-list">
+                        <a class="books-pop-item" href="javascript:;">全部</a>
+                        <a class="books-pop-item" href="javascript:;">纯消费</a>
+                        <a class="books-pop-item" href="javascript:;">还款消费</a>
+                        <a class="books-pop-item" href="javascript:;">快速还款</a>
+                        <a class="books-pop-item" href="javascript:;">充值</a>
+                        <a class="books-pop-item" href="javascript:;">提现</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/swiper-3.4.2.jquery.min.js"></script>
+<script>
+    $('#booksCheck').click(function () {
+        $('.books-pop').fadeIn()
+    })
+    $('.books-pop-mark').click(function () {
+        $('.books-pop').fadeOut()
+    });
+    $('.books-pop-main').click(function (e) {
+        e.stopPropagation()
+    })
+</script>
+</body>
+</html>

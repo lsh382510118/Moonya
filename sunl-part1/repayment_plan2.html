@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <title>还款</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="scss/main.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper-3.4.2.min.css" rel="stylesheet" type="text/css">
+    <script src="js/rem.js"></script>
+</head>
+<body>
+<div class="out-wrap">
+    <div class="header">
+        <div class="header-l"><img src="images/ico-back.png" class="header-ico"></div>
+        <div class="header-m">未提交计划列表</div>
+        <div class="header-r">清空</div>
+    </div>
+    <div class="footer no-border">
+        <button class="larger-btn">提交计划</button>
+    </div>
+    <div class="containt">
+        <div class="pd-05">
+            <!--还款信息-->
+            <div class="plan-info ">
+                <div class="plan-xx">
+                    <p class="plan-id">计划单号：63U349053632817065456</p>
+                    <p class="plan-cycle">还款周期：2017-12-12~2017-12-25</p>
+                    <p class="plan-thaw">可解冻金额：<span class="main-color">500.00</span></p>
+                </div>
+                <div class="plan-hkkz clear">
+                    <div class="plan-hkkz-item">
+                        <p class="plan-hkkz-name">预定还款额：</p>
+                        <p class="plan-hkkz-num">5000.00</p>
+                    </div>
+                    <div class="plan-hkkz-item">
+                        <p class="plan-hkkz-name">保证金：</p>
+                        <p class="plan-hkkz-num">540.00</p>
+                    </div>
+                    <div class="plan-hkkz-item">
+                        <p class="plan-hkkz-name">预交手续费：</p>
+                        <p class="plan-hkkz-num">40.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="table-box mt-05 pd-05">
+                <table class="table table-bb table-center" id="kshk_table">
+                    <tr>
+                        <td>2017-12-03</td>
+                        <td>快速还款</td>
+                        <td>1.00元</td>
+                    </tr>
+                    <tr>
+                        <td>2017-12-03</td>
+                        <td>快速还款</td>
+                        <td>1.00元</td>
+                    </tr>
+                    <tr>
+                        <td>2017-12-03</td>
+                        <td>快速还款</td>
+                        <td>1.00元</td>
+                    </tr>
+                    <tr>
+                        <td>2017-12-03</td>
+                        <td>快速还款</td>
+                        <td>1.00元</td>
+                    </tr>
+                </table>
+                <button class="btn-link" id="tips_show">+ 添加还款项</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pop-tips">计划生成成功</div>
+<div class="pop-list-wrap">
+    <div class="pop-main">
+        <div class="pop-list">
+            <ul class="list lr-list info-list">
+                <li class="lr-list-item list-item">
+                    <div class="lr-list-l">
+                        <p>21:00<span class="ml-05">(消费)</span></p>
+                    </div>
+                    <div class="lr-list-r">363.00</div>
+                </li>
+                <li class="lr-list-item list-item">
+                    <div class="lr-list-l">
+                        <p>21:00<span class="ml-05">(消费)</span></p>
+                    </div>
+                    <div class="lr-list-r">363.00</div>
+                </li>
+                <li class="lr-list-item list-item">
+                    <div class="lr-list-l">
+                        <p>21:00<span class="ml-05">(消费)</span></p>
+                    </div>
+                    <div class="lr-list-r">363.00</div>
+                </li>
+                <li class="lr-list-item list-item">
+                    <div class="lr-list-l">
+                        <p>21:00<span class="ml-05">(消费)</span></p>
+                    </div>
+                    <div class="lr-list-r">363.00</div>
+                </li>
+            </ul>
+            <div class="btn-box">
+                <button class="btn" id="pop_back">返回</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+    $('#tips_show').click(function () {
+        $('.pop-tips').addClass('show');
+        var timer = setTimeout(function () {
+            $('.pop-tips').removeClass('show');
+        },3000)
+    })
+
+    $('#kshk_table tr').click(function () {
+        $('.pop-list-wrap').fadeIn();
+    });
+    $('.pop-main').click(function () {
+        $('.pop-list-wrap').fadeOut();
+    })
+    $('#pop_back').click(function () {
+        $('.pop-list-wrap').fadeOut();
+    })
+    $('.pop-list').click(function (e) {
+        e.stopPropagation();
+    })
+</script>
+</body>
+</html>

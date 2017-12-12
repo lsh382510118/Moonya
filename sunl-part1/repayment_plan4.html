@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <title>还款</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="scss/main.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper-3.4.2.min.css" rel="stylesheet" type="text/css">
+    <script src="js/rem.js"></script>
+</head>
+<body>
+<div class="out-wrap">
+    <div class="header">
+        <div class="header-l"><img src="images/ico-back.png" class="header-ico"></div>
+        <div class="header-m">制定计划</div>
+        <div class="header-r"></div>
+    </div>
+    <div class="containt">
+        <div class="pd-05">
+
+            <!--滑动-银行卡-->
+            <div class="swiper-container makeplan-swiper" id="swiper-wrap">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="hk-bankcard-wrap">
+                            <div class="hk-bankcard-title">
+                                <img class="hk-bankcard-pic" src="images/hk-bankcard-pic1.png">
+                                <p class="hk-bankcard-name">招商银行银行</p>
+                                <p class="hk-bankcard-user">尾号6712 陈**</p>
+                            </div>
+                            <div class="plan-hkkz clear">
+                                <div class="plan-hkkz-item">
+                                    <p class="plan-hkkz-name">应还金额：</p>
+                                    <p class="plan-hkkz-num">8000.00</p>
+                                </div>
+                                <div class="plan-hkkz-item">
+                                    <p class="plan-hkkz-name">帐单日期：</p>
+                                    <p class="plan-hkkz-num">21日</p>
+                                </div>
+                                <div class="plan-hkkz-item">
+                                    <p class="plan-hkkz-name">还款日期：</p>
+                                    <p class="plan-hkkz-num">21日</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hk-bankcard-wrap">
+                            <div class="hk-bankcard-title">
+                                <img class="hk-bankcard-pic" src="images/hk-bankcard-pic2.png">
+                                <p class="hk-bankcard-name">交通银行银行</p>
+                                <p class="hk-bankcard-user">尾号6712 陈**</p>
+                            </div>
+                            <div class="plan-hkkz clear">
+                                <div class="plan-hkkz-item">
+                                    <p class="plan-hkkz-name">应还金额：</p>
+                                    <p class="plan-hkkz-num">8000.00</p>
+                                </div>
+                                <div class="plan-hkkz-item">
+                                    <p class="plan-hkkz-name">帐单日期：</p>
+                                    <p class="plan-hkkz-num">21日</p>
+                                </div>
+                                <div class="plan-hkkz-item">
+                                    <p class="plan-hkkz-name">还款日期：</p>
+                                    <p class="plan-hkkz-num">21日</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hk-bankcard-wrap">
+                            <div class="hk-bankcard-title">
+                                <img class="hk-bankcard-pic" src="images/hk-bankcard-pic1.png">
+                                <p class="hk-bankcard-name">招商银行银行</p>
+                                <p class="hk-bankcard-user">尾号6712 陈**</p>
+                            </div>
+                            <div class="plan-hkkz clear">
+                                <div class="plan-hkkz-item">
+                                    <p class="plan-hkkz-name">应还金额：</p>
+                                    <p class="plan-hkkz-num">8000.00</p>
+                                </div>
+                                <div class="plan-hkkz-item">
+                                    <p class="plan-hkkz-name">帐单日期：</p>
+                                    <p class="plan-hkkz-num">21日</p>
+                                </div>
+                                <div class="plan-hkkz-item">
+                                    <p class="plan-hkkz-name">还款日期：</p>
+                                    <p class="plan-hkkz-num">21日</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bank-chang" id="bank-change"></div>
+            </div>
+            <!--还款信息-->
+            <ul class="list lr-list info-list mt-05">
+                <li class="lr-list-item list-item">
+                    <input class="list-input" type="text" placeholder="输入还款金额">
+                </li>
+                <li class="lr-list-item list-item">
+                    <div class="lr-list-l"><input class="list-input" type="text" placeholder="输入保证金"></div>
+                    <div class="lr-list-r ">
+                        <button class="btn btn-orange list-btn ">计算保证金</button>
+                    </div>
+                </li>
+                <li class="lr-list-item list-item">
+                    <div class="lr-list-l"><input class="list-input" type="date" placeholder="计划开始时间"></div><span class="input-bet-txt">至</span>
+                    <div class="lr-list-r"><input class="list-input" type="date" placeholder="计划结束时间"></div>
+                </li>
+                <li class="lr-list-item list-item">
+                    <div class="lr-list-l">手续费：<span class="main-color">200.00</span></div>
+                </li>
+            </ul>
+            <div class="mt-05">
+                <button class="larger-btn"> 预览计划</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="pop-tips">计划生成成功</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/swiper-3.4.2.jquery.min.js"></script>
+<script>
+    var mySwiper = new Swiper('#swiper-wrap', {
+        loop: true,
+        nextButton:'#bank-change'
+    })
+</script>
+</body>
+</html>

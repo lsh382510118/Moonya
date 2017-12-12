@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <title>提现申请</title>
+    <link href="scss/main.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper-3.4.2.min.css" rel="stylesheet" type="text/css">
+    <script src="js/rem.js"></script>
+</head>
+<body>
+<div class="out-wrap">
+    <div class="header">
+        <div class="header-l"><img src="images/ico-back.png" class="header-ico"></div>
+        <div class="header-m">提现申请</div>
+        <div class="header-r" id="txsqList">记录</div>
+    </div>
+    <div class="containt pd-05">
+        <div class="hk-bankcard-wrap">
+            <div class="hk-bankcard-title">
+                <img class="hk-bankcard-pic" src="images/hk-bankcard-pic1.png">
+                <p class="hk-bankcard-name">招商银行银行</p>
+                <p class="hk-bankcard-user">尾号6712 陈**</p>
+            </div>
+            <div class="input-money-wrap">
+                <p class="input-money-title">提现金额</p>
+                <div class="input-money-b">
+                    <input type="text" class="input-money-num" value="¥" placeholder="请输入金额">
+                </div>
+            </div>
+        </div>
+        <div class="layout-lr clear fz-06 mt-05">
+            <div class="layout-l fl gray-9">可用余额10.000</div>
+            <div class="layout-r red fr">全部提现</div>
+        </div>
+        <div class="btn-box">
+            <button class="larger-btn"> 申请提现</button>
+        </div>
+
+        <div class="red fz-06">
+            申请提现将在24小时内到账
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+    $('#txsqList').click(function () {
+        window.location.href="me_txsq_list.html";
+    })
+</script>
+</body>
+</html>

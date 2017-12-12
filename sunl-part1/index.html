@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <title>index</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="scss/main.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper-3.4.2.min.css" rel="stylesheet" type="text/css">
+    <script src="js/rem.js"></script>
+</head>
+<body>
+<div class="footer">
+    <div class="footer-nav clear">
+        <a href="index.html" class="footer-nav-item active">
+            <i class="footer-nav-ico footer-nav-ico1"></i>
+            <p class="footer-nav-txt">首页</p>
+        </a>
+        <a href="account_books.html" class="footer-nav-item">
+            <i class="footer-nav-ico footer-nav-ico2"></i>
+            <p class="footer-nav-txt">账本</p>
+        </a>
+        <a href="application.html" class="footer-nav-item">
+            <i class="footer-nav-ico footer-nav-ico3"></i>
+            <p class="footer-nav-txt">应用</p>
+        </a>
+        <a href="me.html" class="footer-nav-item">
+            <i class="footer-nav-ico footer-nav-ico4"></i>
+            <p class="footer-nav-txt">我的</p>
+        </a>
+    </div>
+</div>
+<div class="index-containt">
+    <div class="index-header">
+        <div class="header">
+            <div class="header-l"><img src="images/ico-sys.png" class="header-ico"></div>
+            <div class="header-m">卡主人</div>
+            <div class="header-r header-message"><img src="images/ico-message.png" class="header-ico"><span class="header-message-num">12</span></div>
+        </div>
+        <div class="index-header-b clear">
+            <div class="index-header-b-item">
+                <img src="images/ico-hk.png" class="index-header-b-ico">
+                <p class="index-header-b-txt">还款</p>
+            </div>
+            <div class="index-header-b-item">
+                <img src="images/ico-xf.png" class="index-header-b-ico">
+                <p class="index-header-b-txt">消费</p>
+            </div>
+        </div>
+    </div>
+    <div class="index-tips">
+        <div class="index-tips-ico">最新公告</div>
+        <div class="index-tips-txt">尊敬的卡主人信用卡管家用户：昨日用卡管家用用卡管家用</div>
+        <div class="index-tips-time">2017-02-04</div>
+    </div>
+    <!--滚动图 banner-->
+    <div class="banner-wrap swiper-container " >
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/banner-1.png"></div>
+            <div class="swiper-slide"><img src="images/banner-1.png"></div>
+            <div class="swiper-slide"><img src="images/banner-1.png"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!--我的信用卡-->
+    <div class="index-title">
+        我的信用卡
+        <a class="index-title-right add"></a>
+    </div>
+    <!--已绑定信用卡-->
+    <ul class="bankcard-list">
+        <li class="bankcard-item">
+            <div class="bankcard-inner">
+                <div class="bankcard-pic">
+                    <img src="images/bank-pic1.png">
+                </div>
+                <div class="bankcard-info">
+                    <p class="bankcard-id">**** **** **** 6712（陈帅）</p>
+                    <p class="bankcard-type">招商银行</p>
+                    <div class="bankcard-opera clear">
+                        <div class="bankcard-hk-item">
+                            <p class="bankcard-hk-type">本月平台已还(元)</p>
+                            <p class="bankcard-hk-bum">0.0</p>
+                        </div>
+                        <div class="bankcard-hk-item">
+                            <p class="bankcard-hk-type">本月计划将还(元)</p>
+                            <p class="bankcard-hk-bum">0.0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bankcard-btnbox btnbox">
+                <button class="btn">查看还款计划</button>
+            </div>
+        </li>
+        <li class="bankcard-item">
+            <div class="bankcard-inner">
+                <div class="bankcard-pic">
+                    <img src="images/bank-pic2.png">
+                </div>
+                <div class="bankcard-info">
+                    <p class="bankcard-id">**** **** **** 6712（陈帅）</p>
+                    <p class="bankcard-type">交通银行</p>
+                    <div class="bankcard-opera clear">
+                        <div class="bankcard-hk-item">
+                            <p class="bankcard-hk-type">本月平台已还(元)</p>
+                            <p class="bankcard-hk-bum">0.0</p>
+                        </div>
+                        <div class="bankcard-hk-item">
+                            <p class="bankcard-hk-type">本月计划将还(元)</p>
+                            <p class="bankcard-hk-bum">0.0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bankcard-btnbox btnbox">
+                <button class="btn">查看还款计划</button>
+            </div>
+        </li>
+    </ul>
+
+    <!--未绑定信用卡-->
+    <div class="index-nocard-tipsbox">
+        <div class="btnbox">
+            <button class="btn radius only">绑定信用卡</button>
+            <p class="index-nocard-tips">绑定后可自动还款/定制还款计划</p>
+        </div>
+    </div>
+</div>
+
+<div class="container"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/swiper-3.4.2.jquery.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.banner-wrap', {
+        loop: true,
+        autoplay: 3000,
+        pagination : '.swiper-pagination'
+    })
+
+</script>
+</body>
+</html>

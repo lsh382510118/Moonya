@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <title>提现申请</title>
+    <link href="scss/main.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper-3.4.2.min.css" rel="stylesheet" type="text/css">
+    <script src="js/rem.js"></script>
+</head>
+<body>
+<div class="out-wrap">
+    <div class="header">
+        <div class="header-l"><img src="images/ico-back.png" class="header-ico"></div>
+        <div class="header-m">账户充值</div>
+        <div class="header-r"></div>
+    </div>
+    <div class="containt pd-05">
+        <div class="hk-bankcard-wrap">
+            <div class="hk-bankcard-title">
+                <img class="hk-bankcard-pic" src="images/hk-bankcard-pic1.png">
+                <p class="hk-bankcard-name">招商银行银行</p>
+                <p class="hk-bankcard-user">尾号6712 陈**</p>
+                <div class="bank-chang" id="bank-change">更改</div>
+            </div>
+            <form class="form form-left">
+                <div class="form-item">
+                    <div class="form-l">手机号</div>
+                    <div class="form-r"><input type="text" value="150****6627" class="list-input"></div>
+                </div>
+                <div class="form-item">
+                    <div class="form-l">验证码</div>
+                    <div class="form-m"><input type="text" class="list-input" placeholder="输入手机验证码"></div>
+                    <div class="form-r"><button class="btn list-btn btn-radius">获取验证码</button></div>
+                </div>
+            </form>
+        </div>
+        <div class="input-money-wrap mt-05">
+            <p class="input-money-title">充值金额</p>
+            <div class="input-money-b">
+                <input type="text" class="input-money-num" value="¥" placeholder="请输入金额">
+            </div>
+        </div>
+        <div class="layout-lr clear fz-06 mt-05">
+            <div class="layout-l fl gray-9">可用余额10.000</div>
+            <div class="layout-r red fr"></div>
+        </div>
+        <div class="btn-box mt-05">
+            <button class="larger-btn"> 充 值</button>
+        </div>
+
+        <div class="red fz-06">使用新卡支付后，将自动绑定新卡！ </div>
+    </div>
+</div>
+<div class="pop-list-wrap">
+    <div class="pop-main">
+        <div class="pop-list">
+            <div class="pop-bank-list">
+                <div class="pop-bank-item">
+                    <div class="pop-bank-pic"><img src="images/bank-pic1.png"></div>
+                    <div class="pop-bank-info">
+                        <p class="pop-bank-type">工商银行</p>
+                        <p class="pop-bank-num">(尾号6712)</p>
+                    </div>
+                </div>
+                <div class="pop-bank-item">
+                    <div class="pop-bank-pic"><img src="images/bank-pic2.png"></div>
+                    <div class="pop-bank-info">
+                        <p class="pop-bank-type">交通银行</p>
+                        <p class="pop-bank-num">(尾号6712)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-box">
+                <button class="btn-link" id="pop_back">+使用新卡冲值</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+    $('#bank-change').click(function () {
+        $('.pop-list-wrap').fadeIn();
+    });
+    $('.pop-main').click(function () {
+        $('.pop-list-wrap').fadeOut();
+    })
+    $('#pop_back').click(function () {
+        $('.pop-list-wrap').fadeOut();
+    })
+    $('.pop-list').click(function (e) {
+        e.stopPropagation();
+    })
+</script>
+</body>
+</html>
